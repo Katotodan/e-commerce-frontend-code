@@ -1,0 +1,147 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary--color);
+    height: 4rem;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 5;
+}
+nav .menu-icon{
+    font-size: 2.5rem;
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+nav .dropdown-container > div{
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    background-color: var(--secondary--color);
+    height: calc(100vh - 4rem);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    transform: translateX(100%);
+}
+nav .active > div{
+    transform: translateX(0%);
+    transition: transform 1s;
+}
+nav .dropdown-container > div ul, .logout-container{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+}
+nav .logout-container{
+    margin-top: 0rem;
+}
+nav .logout-container button{
+    border: none;
+    background-color: transparent;
+}
+nav ul li:last-of-type{
+    position: relative;
+}
+nav ul li:last-of-type span{
+    background-color: var(--primary--color);
+    display: inline-block;
+    padding: 0.25rem;
+    border-radius: 50%;
+    position: absolute;
+    right: -1rem;
+    top: -0.4rem;
+    color: white;
+    text-align: center;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+.logIn--btn{
+    text-decoration: none;
+    color: black;
+    background-color: var(--primary--color) !important;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: larger;
+    border: none;
+}
+.username{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    cursor: auto !important;
+}
+nav img, .username{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+nav ul li button{
+    border: none;
+}
+nav ul li button img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.logout-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.not-found-paragraph{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+@media (min-width: 768px) {
+    nav{
+        height: 4rem;
+        padding: 0 3rem;
+        width: 100%;
+        justify-content: left;
+    }
+    nav > div:first-of-type{
+        width: 30%;
+        
+    }
+    nav .dropdown-container{
+        width: 70%;
+    }
+    nav .menu-icon{
+        display: none;
+    }
+    nav .dropdown-container > div{
+        position: static;
+        height: 4rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2.5rem;
+        transform: translateX(0%);
+        transition: all 0s;
+    }
+    nav .dropdown-container > div ul, .logout-container{
+        margin-top: 0;
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem;
+    }
+    .not-found-paragraph{
+        font-size: 1.5rem;
+    }
+}
