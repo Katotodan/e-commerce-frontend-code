@@ -16,7 +16,7 @@ export const LogIn = () =>{
 
     const handleSubmition = (userCreditial) =>{  
         setIsLogin(true)
-        axios.post(`${process.env.REACT_APP_API_URL}/login`, userCreditial, {
+        axios.post(`https://firsttest1234.xyz/login`, userCreditial, {
             withCredentials: true, // Send credentials (cookies)
             headers: {
               'Content-Type': 'application/json',

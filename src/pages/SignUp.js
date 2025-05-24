@@ -15,7 +15,7 @@ export const SignIn = () =>{
             setTimeout(()=>{setErrorMsg("")}, 2000)
             setIsLogin(false)    
         }else{
-            axios.post(`${process.env.REACT_APP_API_UR}/signup`, userCreditial, {
+            axios.post(`https://firsttest1234.xyz/signup`, userCreditial, {
                 withCredentials: true, // Send credentials (cookies)
                 headers: {
                     'Content-Type': 'application/json',
