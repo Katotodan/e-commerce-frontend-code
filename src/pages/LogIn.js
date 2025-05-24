@@ -27,14 +27,14 @@ export const LogIn = () =>{
                 sessionStorage.setItem("eCommerceToken", token)
                 setIsLogin(false)
                 // Test if we should redirect to the buy page or not
-                const shouldBuy = sessionStorage.getItem("shouldBuy")                
-                if(shouldBuy !== 'false'){
-                    // Redict to buying page
-                    sessionStorage.setItem("shouldBuy", 'false')
-                    navigate('/card')
-                }else{
+                // const shouldBuy = sessionStorage.getItem("shouldBuy")                
+                // if(shouldBuy !== 'false'){
+                //     // Redict to buying page
+                //     sessionStorage.setItem("shouldBuy", 'false')
+                //     navigate('/card')
+                // }else{
                     navigate("/")
-                }
+                // }
             }).catch(err => {
                 // Show error message
                 err.response?.data.message ? setErrorMsg(err.response.data.message) : setErrorMsg(err.message)    
@@ -52,3 +52,4 @@ export const LogIn = () =>{
         <Form title="Log in" submit={handleSubmition} errorMsg={errorMsg} isLoading = {isLogin}/> 
     )
 } 
+// Redirect to card
