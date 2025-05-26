@@ -81,6 +81,9 @@
         height: auto !important;
     }
 }
+button, a{
+    color: black !important;
+}
    
 
     
