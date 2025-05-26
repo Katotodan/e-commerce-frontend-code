@@ -108,7 +108,7 @@
   float: right;
   padding: 0.5rem 1rem;
   background-color: black;
-  color: white;
+  color: white !important;
   font-size: large;
   border-radius: 5px;
   cursor: pointer;
