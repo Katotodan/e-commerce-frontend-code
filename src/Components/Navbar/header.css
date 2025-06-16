@@ -35,7 +35,6 @@ nav .dropdown-container > div{
     align-items: center;
     gap: 2.5rem;
     transform: translateX(100%);
-    overflow-x: scroll;
 }
 nav .active > div{
     transform: translateX(0%);
