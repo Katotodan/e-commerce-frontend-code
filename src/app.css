@@ -87,6 +87,7 @@
     }
     .right-container{
         background-color: rgb(182, 117, 117);
+        overflow-y: scroll;
     }
 }
 button, a{
