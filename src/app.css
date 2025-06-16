@@ -23,7 +23,7 @@
 .right-container{
     width: 100%;
     padding: 0 1rem;
-    height: 100%;
+    height: calc(100dvh - 4rem);
 }
 .search-btn{
     cursor: pointer;
@@ -84,6 +84,9 @@
         min-height: 100dvh;
         padding-bottom: 0 !important;
         margin-bottom: 0 !important;
+    }
+    .right-container{
+        background-color: rgb(182, 117, 117);
     }
 }
 button, a{
