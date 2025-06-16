@@ -16,7 +16,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: red;
-  height: 100vh;
+  height: 100dvh;
 }
 
 code {
