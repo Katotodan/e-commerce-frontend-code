@@ -51,7 +51,7 @@
     }
     /* LEFT AND RIGHT CONTAINER STYLE */
     .search-btn{
-        position: absolute;
+        /* position: absolute;
         top: 2rem;
         left: 0.25rem;
         font-size: 1.5rem;
@@ -59,7 +59,7 @@
         border: none;
         background-color: transparent;
         z-index: 2;
-        cursor: pointer;
+        cursor: pointer; */
     }
     .left-container{
         width: 30%;
