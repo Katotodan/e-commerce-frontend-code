@@ -82,7 +82,8 @@
     }
     .App{
         min-height: 100dvh;
-        max-height: auto;
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
     }
 }
 button, a{
