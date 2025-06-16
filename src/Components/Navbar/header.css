@@ -152,3 +152,17 @@ nav ul li button img{
         font-size: 1.5rem;
     }
 }
+@media (orientation: landscape) and (max-width: 600px) {
+   
+     nav .dropdown-container > div ul{
+        margin-top: 1rem;
+        gap: 1rem;
+     }
+  nav .dropdown-container > div{
+    overflow-y: scroll;
+    gap: 1rem;
+    align-items: top;
+    padding-bottom: 0.25rem;
+    padding-top: 0;
+  }
+}
