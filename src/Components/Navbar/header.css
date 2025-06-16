@@ -152,7 +152,7 @@ nav ul li button img{
         font-size: 1.5rem;
     }
 }
-@media (orientation: landscape) and (max-width: 600px) {
+@media (orientation: landscape) and (max-width: 768px) {
    
      nav .dropdown-container > div ul{
         margin-top: 1rem;
@@ -164,8 +164,5 @@ nav ul li button img{
     align-items: top;
     padding-bottom: 0.25rem;
     padding-top: 0;
-  }
-  .link{
-    background-color: red;
   }
 }
