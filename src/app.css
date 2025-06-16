@@ -17,7 +17,7 @@
 .main--container{
     position: relative;
     margin-top: 0rem;
-    height: calc(100vh - 4rem);
+    height: calc(100dvh - 4rem);
     overflow-y: scroll;
 }
 .right-container{
@@ -51,7 +51,7 @@
     }
     /* LEFT AND RIGHT CONTAINER STYLE */
     .search-btn{
-        position: absolute;
+        position: fixed;
         top: 2rem;
         left: 0.25rem;
         font-size: 1.5rem;
@@ -79,6 +79,10 @@
     textarea {
         font-size: 16px !important;
         height: auto !important;
+    }
+    .App{
+        min-height: 100dvh;
+        max-height: auto;
     }
 }
 button, a{
