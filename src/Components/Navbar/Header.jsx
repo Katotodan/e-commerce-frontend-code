@@ -27,7 +27,8 @@ const Header = () => {
   }
   
   return (
-    <nav>
+    <header>
+      <nav>
         <div>
           <Link to="/"> <img src="logo.png" alt="E-commerce logo" /> </Link>
         </div>
@@ -62,6 +63,10 @@ const Header = () => {
           </div>
         </div>
       </nav>
+      <div className="gap-fixer">
+      </div>
+    </header>
+    
   )
 }
 
