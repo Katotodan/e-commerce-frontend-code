@@ -6,6 +6,8 @@ nav{
     height: 4rem;
     padding: 0 1rem;
     position: relative;
+    top: 0;
+    left: 0;
     z-index: 5;
 }
 nav .menu-icon{
