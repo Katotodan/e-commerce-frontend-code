@@ -6,6 +6,7 @@
 html, body{
   position: sticky;
   overflow-x: hidden;
+  overscroll-behavior: none;
 }
 body {
   width: 100%;
