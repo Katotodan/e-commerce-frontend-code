@@ -12,8 +12,8 @@
 }
 .left-container{
     width: 100%;
-    height: calc(100% - 4rem - 1.5rem);
-    overflow-y: scroll;
+    height: 100%;
+    padding-bottom: 0 !important;
 }
 .main--container{
     position: relative;
@@ -62,9 +62,7 @@
     .left-container{
         width: 30%;
         padding-top: 2rem ;
-        height: 100%;
     }
-    
     .right-container{
         width: 70%;
         overflow-y: auto;
@@ -73,7 +71,7 @@
     }
 } 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px ) {
     input,
     select,
     textarea {

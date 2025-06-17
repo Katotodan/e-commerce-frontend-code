@@ -1,8 +1,9 @@
 .left--menu{
     background-color: var(--secondary--color);
     width: 100%;
-    height: calc(100vh - 5.5rem) !important;
+    height: calc(100dvh - 5.5rem) !important;
     padding: 2rem 1rem;
+    overflow-y: auto;
 }
 .left--menu h2{
     margin-bottom: 2rem;
@@ -47,6 +48,6 @@
  /*Larger screen  */
  @media (min-width: 768px) {
     .left--menu{
-        height: 100% !important;
+        overflow-y: hidden;
     }
  }
