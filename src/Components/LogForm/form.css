@@ -1,6 +1,8 @@
 .log--form{
   background-color: #a3ccd5;
-  height: 100vh;
+  height: 100dvh;
+  overflow-x: scroll;
+  padding-bottom: 1rem;
   
 }
 .log--form h1{
@@ -66,7 +68,7 @@
     width: 75%;
   }
   .log--form{
-    min-height: 100vh;
+    min-height: 100dvh;
     max-height: auto;
   }
 }
@@ -95,11 +97,8 @@
     
   }
 }
+
 @media (orientation: landscape) and (max-width: 768px) {
-  .log--form{
-    overflow-x: scroll;
-    padding-bottom: 1rem;
-  }
   .log--form h1{
     padding: 0.5rem;
   }
