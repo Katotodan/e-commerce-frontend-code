@@ -70,18 +70,16 @@
     }
 } 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     input,
     select,
     textarea {
         font-size: 16px !important;
         height: auto !important;
     }
-    .App{
+    /* .App{
         min-height: 100dvh;
-        padding-bottom: 0 !important;
-        margin-bottom: 0 !important;
-    }
+    } */
 }
 button, a{
     color: black;
