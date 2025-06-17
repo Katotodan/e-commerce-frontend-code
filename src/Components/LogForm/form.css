@@ -95,4 +95,12 @@
     
   }
 }
-  
+@media (orientation: landscape) and (max-width: 768px) {
+  .log--form{
+    overflow-x: scroll;
+    padding-bottom: 1rem;
+  }
+  .log--form h1{
+    padding: 0.5rem;
+  }
+}
