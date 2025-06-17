@@ -67,10 +67,6 @@
   .log--form form{
     width: 75%;
   }
-  .log--form{
-    min-height: 100dvh;
-    max-height: auto;
-  }
 }
 @media only screen and (max-width: 600px){
   .log--form h1{
