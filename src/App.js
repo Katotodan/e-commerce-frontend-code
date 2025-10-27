@@ -31,6 +31,14 @@ export function App() {
         })
     }
     fecthData()
+    // Wake up backend server
+    axios.get(`${process.env.REACT_APP_API_URL}/wake-up`)
+      .then(res => {
+          console.log(res.data.message)  
+      })
+      .catch(error => {
+        console.error(error.message)
+    })  
     
   }, [])
   useEffect(() =>{
